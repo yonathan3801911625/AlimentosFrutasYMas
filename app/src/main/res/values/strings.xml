@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlimentosFrutasYMas</string>
+    <string name="venta">Venta</string>
+    <string name="producto">Producto</string>
+    <string name="administrativo">Administrativo</string>
+    <string name="titulo">Alimentos, frutas y más...</string>
+</resources>

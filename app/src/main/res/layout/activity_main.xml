@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgBAdministrativo"
+        android:outlineSpotShadowColor="@color/shadow"
+        android:outlineAmbientShadowColor="@color/shadow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo"
+        app:srcCompat="@drawable/networking" />
+
+    <ImageButton
+        android:id="@+id/imgBProducto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imgBVenta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBAdministrativo"
+        app:srcCompat="@drawable/product" />
+
+    <ImageButton
+        android:id="@+id/imgBVenta"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgBProducto"
+        app:layout_constraintTop_toBottomOf="@+id/imgBAdministrativo"
+        app:srcCompat="@drawable/ventas" />
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textColor="@color/white"
+        android:shadowColor="@color/shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="30"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="179dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
